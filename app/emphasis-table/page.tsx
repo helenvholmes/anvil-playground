@@ -2,209 +2,209 @@
 import { AnvilProvider, Grid, Text, Tooltip, Link } from "@servicetitan/anvil2";
 
 export default function EmphasisTable() {
-    const table = {
-      high: {
-        color: {
-          blue: {
-            "500": {
-              value: "#0265dcff",
-            },
-            "600": {
-              value: "#004491ff",
-            },
+  const table = {
+    high: {
+      color: {
+        blue: {
+          "500": {
+            value: "#0265dcff",
           },
-          red: {
-            "500": {
-              value: "#e13212ff",
-            },
-            "600": {
-              value: "#bf2a00ff",
-            },
+          "600": {
+            value: "#004491ff",
           },
-          yellow: {
-            "500": {
-              value: "#ffbe00ff",
-            },
-            "600": {
-              value: "#de9500ff",
-            },
+        },
+        red: {
+          "500": {
+            value: "#e13212ff",
           },
-          green: {
-            "500": {
-              value: "#007a4dff",
-            },
-            "600": {
-              value: "#005132ff",
-            },
+          "600": {
+            value: "#bf2a00ff",
           },
-          "blue-grey": {
-            "500": {
-              value: "#6a7a85ff",
-            },
-            "600": {
-              value: "#576671ff",
-            },
+        },
+        yellow: {
+          "500": {
+            value: "#ffbe00ff",
           },
-          orange: {
-            "500": {
-              value: "#b14c00ff",
-            },
-            "600": {
-              value: "#7a2f00ff",
-            },
+          "600": {
+            value: "#de9500ff",
           },
-          cyan: {
-            "500": {
-              value: "#0ca5c0ff",
-            },
-            "600": {
-              value: "#038299ff",
-            },
+        },
+        green: {
+          "500": {
+            value: "#007a4dff",
           },
-          purple: {
-            "500": {
-              value: "#4f3a9eff",
-            },
-            "600": {
-              value: "#422799ff",
-            },
+          "600": {
+            value: "#005132ff",
           },
-          magenta: {
-            "500": {
-              value: "#982071ff",
-            },
-            "600": {
-              value: "#7d165bff",
-            },
+        },
+        "blue-grey": {
+          "500": {
+            value: "#6a7a85ff",
+          },
+          "600": {
+            value: "#576671ff",
+          },
+        },
+        orange: {
+          "500": {
+            value: "#b14c00ff",
+          },
+          "600": {
+            value: "#7a2f00ff",
+          },
+        },
+        cyan: {
+          "500": {
+            value: "#0ca5c0ff",
+          },
+          "600": {
+            value: "#038299ff",
+          },
+        },
+        purple: {
+          "500": {
+            value: "#4f3a9eff",
+          },
+          "600": {
+            value: "#422799ff",
+          },
+        },
+        magenta: {
+          "500": {
+            value: "#982071ff",
+          },
+          "600": {
+            value: "#7d165bff",
           },
         },
       },
-      medium: {
-        color: {
-          blue: {
-            "200": { value: "#b5deffff" },
-            "300": { value: "#78bbfaff" },
-            "400": { value: "#3892f3ff" },
+    },
+    medium: {
+      color: {
+        blue: {
+          "200": { value: "#b5deffff" },
+          "300": { value: "#78bbfaff" },
+          "400": { value: "#3892f3ff" },
+        },
+        red: {
+          "200": { value: "#ffb2a0ff" },
+          "300": { value: "#ff745fff" },
+          "400": { value: "#f94d32ff" },
+        },
+        yellow: {
+          "200": { value: "#fff0b1ff" },
+          "300": { value: "#ffe278ff" },
+          "400": { value: "#ffc902ff" },
+        },
+        green: {
+          "200": { value: "#89ecbcff" },
+          "300": { value: "#49cc93ff" },
+          "400": { value: "#15a46eff" },
+        },
+        "blue-grey": {
+          "200": { value: "#d0d8ddff" },
+          "300": { value: "#b4c1c8ff" },
+          "400": { value: "#8c9ca5ff" },
+        },
+        orange: {
+          "200": { value: "#fdd291ff" },
+          "300": { value: "#ffa037ff" },
+          "400": { value: "#e46f00ff" },
+        },
+        cyan: {
+          "200": { value: "#b1f3faff" },
+          "300": { value: "#13ceeaff" },
+          "400": { value: "#08bfdfff" },
+        },
+        purple: {
+          "200": { value: "#c1b6f2ff" },
+          "300": { value: "#8772e5ff" },
+          "400": { value: "#6954c0ff" },
+        },
+        magenta: {
+          "200": { value: "#faafe2ff" },
+          "300": { value: "#d949a9ff" },
+          "400": { value: "#b52d88ff" },
+        },
+      },
+    },
+    low: {
+      color: {
+        blue: {
+          "100": {
+            value: "#e0f2ffff",
           },
-          red: {
-            "200": { value: "#ffb2a0ff" },
-            "300": { value: "#ff745fff" },
-            "400": { value: "#f94d32ff" },
+        },
+        red: {
+          "100": {
+            value: "#ffece9ff",
           },
-          yellow: {
-            "200": { value: "#fff0b1ff" },
-            "300": { value: "#ffe278ff" },
-            "400": { value: "#ffc902ff" },
+        },
+        yellow: {
+          "100": {
+            value: "#fff9e2ff",
           },
-          green: {
-            "200": { value: "#89ecbcff" },
-            "300": { value: "#49cc93ff" },
-            "400": { value: "#15a46eff" },
+        },
+        green: {
+          "100": {
+            value: "#cef8e0ff",
           },
-          "blue-grey": {
-            "200": { value: "#d0d8ddff" },
-            "300": { value: "#b4c1c8ff" },
-            "400": { value: "#8c9ca5ff" },
+        },
+        "blue-grey": {
+          "100": {
+            value: "#eaeff2ff",
           },
-          orange: {
-            "200": { value: "#fdd291ff" },
-            "300": { value: "#ffa037ff" },
-            "400": { value: "#e46f00ff" },
+        },
+        orange: {
+          "100": {
+            value: "#ffecccff",
           },
-          cyan: {
-            "200": { value: "#b1f3faff" },
-            "300": { value: "#13ceeaff" },
-            "400": { value: "#08bfdfff" },
+        },
+        cyan: {
+          "100": {
+            value: "#e3fcffff",
           },
-          purple: {
-            "200": { value: "#c1b6f2ff" },
-            "300": { value: "#8772e5ff" },
-            "400": { value: "#6954c0ff" },
+        },
+        purple: {
+          "100": {
+            value: "#f1edffff",
           },
-          magenta: {
-            "200": { value: "#faafe2ff" },
-            "300": { value: "#d949a9ff" },
-            "400": { value: "#b52d88ff" },
+        },
+        magenta: {
+          "100": {
+            value: "#fbeaf5ff",
           },
         },
       },
-      low: {
-        color: {
-          blue: {
-            "100": {
-              value: "#e0f2ffff",
-            },
-          },
-          red: {
-            "100": {
-              value: "#ffece9ff",
-            },
-          },
-          yellow: {
-            "100": {
-              value: "#fff9e2ff",
-            },
-          },
-          green: {
-            "100": {
-              value: "#cef8e0ff",
-            },
-          },
-          "blue-grey": {
-            "100": {
-              value: "#eaeff2ff",
-            },
-          },
-          orange: {
-            "100": {
-              value: "#ffecccff",
-            },
-          },
-          cyan: {
-            "100": {
-              value: "#e3fcffff",
-            },
-          },
-          purple: {
-            "100": {
-              value: "#f1edffff",
-            },
-          },
-          magenta: {
-            "100": {
-              value: "#fbeaf5ff",
-            },
-          },
-        },
-      },
-    };
-    
-    const ColorBox = ({ color, shade, value }: { color: string; shade: string; value: string }) => (
-      <Tooltip>
-        <Tooltip.Trigger>
-          <div
-            key={`${color}-${shade}`}
-            style={{
-              backgroundColor: value,
-              borderRadius: "6px",
-              width: "60px",
-              height: "30px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "#fff",
-              fontWeight: "bold",
-            }}
-          />
-        </Tooltip.Trigger>
-        <Tooltip.Content>
-          color/{color}/{shade}
-        </Tooltip.Content>
-      </Tooltip>
-    );
-    
-    return (
-      <AnvilProvider>
+    },
+  };
+
+  const ColorBox = ({ color, shade, value }: { color: string; shade: string; value: string }) => (
+    <Tooltip>
+      <Tooltip.Trigger>
+        <div
+          key={`${color}-${shade}`}
+          style={{
+            backgroundColor: value,
+            borderRadius: "6px",
+            width: "60px",
+            height: "30px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            color: "#fff",
+            fontWeight: "bold",
+          }}
+        />
+      </Tooltip.Trigger>
+      <Tooltip.Content>
+        color/{color}/{shade}
+      </Tooltip.Content>
+    </Tooltip>
+  );
+
+  return (
+    <AnvilProvider>
 
       <div
         style={{
@@ -218,7 +218,7 @@ export default function EmphasisTable() {
           overflowX: "scroll",
         }}
       >
-      <Link href="/" appearance="primary">Back</Link>
+        <Link href="/" appearance="primary">Back</Link>
 
         <Grid templateColumns="repeat(3, 1fr)" gap="14">
           <div
@@ -247,11 +247,11 @@ export default function EmphasisTable() {
             {Object.entries(table.high.color).map(([color, shades]) =>
               Object.entries(shades).map(([shade, { value }]) => (
                 <ColorBox
-                    key={`${color}-${shade}`}
-                    color={color}
-                    shade={shade}
-                    value={value}
-                  />
+                  key={`${color}-${shade}`}
+                  color={color}
+                  shade={shade}
+                  value={value}
+                />
               ))
             )}
           </Grid>
@@ -260,12 +260,12 @@ export default function EmphasisTable() {
           <Grid templateColumns="repeat(4, 1fr)" gap="4">
             {Object.entries(table.medium.color).map(([color, shades]) =>
               Object.entries(shades).map(([shade, { value }]) => (
-               <ColorBox
-                    key={`${color}-${shade}`}
-                    color={color}
-                    shade={shade}
-                    value={value}
-                  />
+                <ColorBox
+                  key={`${color}-${shade}`}
+                  color={color}
+                  shade={shade}
+                  value={value}
+                />
               ))
             )}
           </Grid>
@@ -275,17 +275,16 @@ export default function EmphasisTable() {
             {Object.entries(table.low.color).map(([color, shades]) =>
               Object.entries(shades).map(([shade, { value }]) => (
                 <ColorBox
-                    key={`${color}-${shade}`}
-                    color={color}
-                    shade={shade}
-                    value={value}
-                  />
+                  key={`${color}-${shade}`}
+                  color={color}
+                  shade={shade}
+                  value={value}
+                />
               ))
             )}
           </Grid>
         </Grid>
       </div>
-        </AnvilProvider>
-    );
-  }
-  
+    </AnvilProvider>
+  );
+}
