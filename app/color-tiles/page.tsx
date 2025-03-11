@@ -53,6 +53,42 @@ export default function ForegroundColorTiles() {
             <ColorTile key={key} color={color} showBorders />
           ))}
         </Grid>
+        Green
+        <Grid templateColumns='repeat(2, 1fr)' gap='4'>
+          {Object.entries(colors.greens).map(([key, color]) => (
+            <ColorTile key={key} color={color} showBorders />
+          ))}
+        </Grid>
+        Blue Grey
+        <Grid templateColumns='repeat(2, 1fr)' gap='4'>
+          {Object.entries(colors.bluegreys).map(([key, color]) => (
+            <ColorTile key={key} color={color} showBorders />
+          ))}
+        </Grid>
+        Orange
+        <Grid templateColumns='repeat(2, 1fr)' gap='4'>
+          {Object.entries(colors.oranges).map(([key, color]) => (
+            <ColorTile key={key} color={color} showBorders />
+          ))}
+        </Grid>
+        Cyan
+        <Grid templateColumns='repeat(2, 1fr)' gap='4'>
+          {Object.entries(colors.cyans).map(([key, color]) => (
+            <ColorTile key={key} color={color} showBorders />
+          ))}
+        </Grid>
+        Purple
+        <Grid templateColumns='repeat(2, 1fr)' gap='4'>
+          {Object.entries(colors.purples).map(([key, color]) => (
+            <ColorTile key={key} color={color} showBorders />
+          ))}
+        </Grid>
+        Magenta
+        <Grid templateColumns='repeat(2, 1fr)' gap='4'>
+          {Object.entries(colors.magentas).map(([key, color]) => (
+            <ColorTile key={key} color={color} showBorders />
+          ))}
+        </Grid>
       </div>
     </AnvilProvider>
   );
