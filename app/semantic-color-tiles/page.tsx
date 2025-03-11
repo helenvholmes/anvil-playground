@@ -7,6 +7,7 @@ import {
   Link,
   Flex,
 } from "@servicetitan/anvil2";
+import ColorTile from "~/app/components/ui-components/color-tile";
 
 export default function ForegroundColorTiles() {
   const darkGuidance = "Works with white text or background";
@@ -229,83 +230,6 @@ export default function ForegroundColorTiles() {
     },
   };
 
-  type TooltipTriggerProps = {
-    color: {
-      description?: string;
-      cssVariable: string;
-      hexCode: string;
-      name: string;
-      token: string;
-    };
-  };
-
-  const TooltipTrigger: React.FC<TooltipTriggerProps> = ({ color }) => (
-    <div
-      style={{
-        backgroundColor: `var(${color.cssVariable})`,
-        boxSizing: "border-box",
-        padding: "16px",
-        borderColor:
-          color.hexCode === "#FFFFFF" ||
-            color.hexCode === "#737475" ||
-            color.hexCode === "#F7F7F7" ||
-            color.hexCode === "#EEEEEE" ||
-            color.hexCode === "#E0F2FF" ||
-            color.hexCode === "#FFECE9" ||
-            color.hexCode === "#FFF9E3"
-            ? "#DFE0E1"
-            : "transparent",
-        width: "75%",
-        height: "140px",
-        borderRadius: "12px",
-        marginBottom: "16px",
-        borderWidth: "1px",
-        borderStyle: "solid",
-        display: "flex",
-        flexDirection: "column-reverse",
-        alignItems: "start",
-      }}
-    >
-      {color.description && (
-        <Tooltip>
-          <Tooltip.Trigger>
-            <div
-              style={{
-                borderRadius: "100%",
-                width: "24px",
-                height: "24px",
-                backgroundColor:
-                  color.description === darkGuidance ? "white" : "black",
-              }}
-            />
-          </Tooltip.Trigger>
-          <Tooltip.Content>{color.description}</Tooltip.Content>
-        </Tooltip>
-      )}
-    </div>
-  );
-
-  interface CardLockupProps extends TooltipTriggerProps {
-    key: React.Key;
-  }
-
-  const CardLockup: React.FC<CardLockupProps> = ({ color, key }) => (
-    <div key={key}>
-      <TooltipTrigger color={color} />
-      <Flex gap='2' direction='column'>
-        <Text variant='body' inline style={{ fontWeight: 700 }}>
-          {color.name}
-        </Text>
-        <Flex gap='4'>
-          <Text>{color.token}</Text>
-          <Text variant='body' subdued>
-            {color.hexCode}
-          </Text>
-        </Flex>
-      </Flex>
-    </div>
-  );
-
   return (
     <AnvilProvider>
       <div
@@ -325,25 +249,25 @@ export default function ForegroundColorTiles() {
         Foreground colors
         <Grid templateColumns='repeat(2, 1fr)' gap='4'>
           {Object.entries(colors.foregroundColors).map(([key, color]) => (
-            <CardLockup key={key} color={color} />
+            <ColorTile key={key} color={color} />
           ))}
         </Grid>
         Background colors
         <Grid templateColumns='repeat(2, 1fr)' gap='4'>
           {Object.entries(colors.backgroundColors).map(([key, color]) => (
-            <CardLockup key={key} color={color} />
+            <ColorTile key={key} color={color} />
           ))}
         </Grid>
         Border colors
         <Grid templateColumns='repeat(2, 1fr)' gap='4'>
           {Object.entries(colors.borderColors).map(([key, color]) => (
-            <CardLockup key={key} color={color} />
+            <ColorTile key={key} color={color} />
           ))}
         </Grid>
         Status colors
         <Grid templateColumns='repeat(2, 1fr)' gap='4'>
           {Object.entries(colors.statusColors).map(([key, color]) => (
-            <CardLockup key={key} color={color} />
+            <ColorTile key={key} color={color} />
           ))}
         </Grid>
       </div>
