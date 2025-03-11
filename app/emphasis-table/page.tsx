@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { AnvilProvider, Grid, Text, Tooltip, Link } from "@servicetitan/anvil2";
 
 export default function EmphasisTable() {
@@ -179,7 +179,15 @@ export default function EmphasisTable() {
     },
   };
 
-  const ColorBox = ({ color, shade, value }: { color: string; shade: string; value: string }) => (
+  const ColorBox = ({
+    color,
+    shade,
+    value,
+  }: {
+    color: string;
+    shade: string;
+    value: string;
+  }) => (
     <Tooltip>
       <Tooltip.Trigger>
         <div
@@ -205,7 +213,6 @@ export default function EmphasisTable() {
 
   return (
     <AnvilProvider>
-
       <div
         style={{
           display: "flex",
@@ -218,7 +225,9 @@ export default function EmphasisTable() {
           overflowX: "scroll",
         }}
       >
-        <Link href="/" appearance="primary">Back</Link>
+        <Link href="/" appearance="primary">
+          Back
+        </Link>
 
         <Grid templateColumns="repeat(3, 1fr)" gap="14">
           <div

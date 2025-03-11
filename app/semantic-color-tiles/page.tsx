@@ -245,27 +245,27 @@ export default function ForegroundColorTiles() {
           overflowX: "scroll",
         }}
       >
-        <Link href='/'>Back</Link>
+        <Link href="/">Back</Link>
         Foreground colors
-        <Grid templateColumns='repeat(2, 1fr)' gap='4'>
+        <Grid templateColumns="repeat(2, 1fr)" gap="4">
           {Object.entries(colors.foregroundColors).map(([key, color]) => (
             <ColorTile key={key} color={color} />
           ))}
         </Grid>
         Background colors
-        <Grid templateColumns='repeat(2, 1fr)' gap='4'>
+        <Grid templateColumns="repeat(2, 1fr)" gap="4">
           {Object.entries(colors.backgroundColors).map(([key, color]) => (
             <ColorTile key={key} color={color} />
           ))}
         </Grid>
         Border colors
-        <Grid templateColumns='repeat(2, 1fr)' gap='4'>
+        <Grid templateColumns="repeat(2, 1fr)" gap="4">
           {Object.entries(colors.borderColors).map(([key, color]) => (
             <ColorTile key={key} color={color} />
           ))}
         </Grid>
         Status colors
-        <Grid templateColumns='repeat(2, 1fr)' gap='4'>
+        <Grid templateColumns="repeat(2, 1fr)" gap="4">
           {Object.entries(colors.statusColors).map(([key, color]) => (
             <ColorTile key={key} color={color} />
           ))}

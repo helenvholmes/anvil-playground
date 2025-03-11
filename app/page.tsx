@@ -14,6 +14,7 @@ export default function Home() {
           <Link href="/emphasis-table">emphasis table</Link>
           <Link href="/color-tiles">color tiles</Link>
           <Link href="/semantic-color-tiles">semantic color tiles</Link>
+          <Link href="/contrast-tiles">color contrast tiles</Link>
         </main>
       </div>
     </AnvilProvider>

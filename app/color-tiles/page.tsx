@@ -28,63 +28,63 @@ export default function ForegroundColorTiles() {
           overflowX: "scroll",
         }}
       >
-        <Link href='/'>Back</Link>
+        <Link href="/">Back</Link>
         Blues
-        <Grid templateColumns='repeat(2, 1fr)' gap='4'>
+        <Grid templateColumns="repeat(2, 1fr)" gap="4">
           {Object.entries(colors.blues).map(([key, color]) => (
             <ColorTile key={key} color={color} showBorders />
           ))}
         </Grid>
         Neutrals
-        <Grid templateColumns='repeat(2, 1fr)' gap='4'>
+        <Grid templateColumns="repeat(2, 1fr)" gap="4">
           {Object.entries(colors.neutrals).map(([key, color]) => (
             <ColorTile key={key} color={color} showBorders />
           ))}
         </Grid>
         Reds
-        <Grid templateColumns='repeat(2, 1fr)' gap='4'>
+        <Grid templateColumns="repeat(2, 1fr)" gap="4">
           {Object.entries(colors.reds).map(([key, color]) => (
             <ColorTile key={key} color={color} showBorders />
           ))}
         </Grid>
         Yellows
-        <Grid templateColumns='repeat(2, 1fr)' gap='4'>
+        <Grid templateColumns="repeat(2, 1fr)" gap="4">
           {Object.entries(colors.yellows).map(([key, color]) => (
             <ColorTile key={key} color={color} showBorders />
           ))}
         </Grid>
         Green
-        <Grid templateColumns='repeat(2, 1fr)' gap='4'>
+        <Grid templateColumns="repeat(2, 1fr)" gap="4">
           {Object.entries(colors.greens).map(([key, color]) => (
             <ColorTile key={key} color={color} showBorders />
           ))}
         </Grid>
         Blue Grey
-        <Grid templateColumns='repeat(2, 1fr)' gap='4'>
+        <Grid templateColumns="repeat(2, 1fr)" gap="4">
           {Object.entries(colors.bluegreys).map(([key, color]) => (
             <ColorTile key={key} color={color} showBorders />
           ))}
         </Grid>
         Orange
-        <Grid templateColumns='repeat(2, 1fr)' gap='4'>
+        <Grid templateColumns="repeat(2, 1fr)" gap="4">
           {Object.entries(colors.oranges).map(([key, color]) => (
             <ColorTile key={key} color={color} showBorders />
           ))}
         </Grid>
         Cyan
-        <Grid templateColumns='repeat(2, 1fr)' gap='4'>
+        <Grid templateColumns="repeat(2, 1fr)" gap="4">
           {Object.entries(colors.cyans).map(([key, color]) => (
             <ColorTile key={key} color={color} showBorders />
           ))}
         </Grid>
         Purple
-        <Grid templateColumns='repeat(2, 1fr)' gap='4'>
+        <Grid templateColumns="repeat(2, 1fr)" gap="4">
           {Object.entries(colors.purples).map(([key, color]) => (
             <ColorTile key={key} color={color} showBorders />
           ))}
         </Grid>
         Magenta
-        <Grid templateColumns='repeat(2, 1fr)' gap='4'>
+        <Grid templateColumns="repeat(2, 1fr)" gap="4">
           {Object.entries(colors.magentas).map(([key, color]) => (
             <ColorTile key={key} color={color} showBorders />
           ))}
