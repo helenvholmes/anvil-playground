@@ -70,6 +70,96 @@
   --colorsTextOnSecondary: rgb(255, 255, 255);
   --colorsTextOnWarning: rgb(20, 20, 20);
   --colorsTextOnCritical: rgb(255, 255, 255);
+
+  --background-color: light-dark(#ffffff, #141414);
+  --background-color-strong: light-dark(#f7f7f7, #2d2e31);
+  --background-color-stronger: light-dark(#eeeeee, #444445);
+  --background-color-strongest: light-dark(#bcbcbd, #737475);
+  --background-color-primary: light-dark(#0265dc, #78bbfa);
+  --background-color-primary-subdued: light-dark(
+    #e0f2ff,
+    rgba(120, 187, 250, 0.2)
+  );
+  --background-color-danger: light-dark(#e13212, #ff745f);
+  --background-color-warning: light-dark(#ffbe00, #ffe278);
+  --background-color-disabled: light-dark(#606162, #606162);
+  --background-color-inverted: light-dark(#2d2e31, #fafafa);
+  --background-color-inverted-strong: light-dark(#141414, #ffffff);
+  --border-color: light-dark(#949596, #606162);
+  --border-color-subdued: light-dark(#dfe0e1, #444445);
+  --border-color-strong: light-dark(#444445, #dfe0e1);
+  --border-color-primary: light-dark(#0265dc, #78bbfa);
+  --border-color-danger: light-dark(#e13212, #ff745f);
+  --focus-ring-color: light-dark(#0265dc, #78bbfa);
+  --focus-ring-color-danger: light-dark(#e13212, #ff745f);
+  --foreground-color: light-dark(#141414, #ffffff);
+  --foreground-color-subdued: light-dark(#737475, #bcbcbd);
+  --foreground-color-primary: light-dark(#0265dc, #78bbfa);
+  --foreground-color-danger: light-dark(#e13212, #ff745f);
+  --foreground-color-inverted: light-dark(#ffffff, #141414);
+  --foreground-color-on-primary: light-dark(#ffffff, #141414);
+  --foreground-color-on-danger: light-dark(#ffffff, #141414);
+  --foreground-color-on-warning: light-dark(#141414, #141414);
+  --foreground-color-active-primary: light-dark(#004491, #b5deff);
+  --foreground-color-active-danger: light-dark(#bf2a00, #ff745f);
+  --foreground-color-hover-primary: light-dark(#004491, #b5deff);
+  --foreground-color-hover-danger: light-dark(#bf2a00, #ff745f);
+  --overlay-color-active: light-dark(
+    rgba(20, 20, 20, 0.1607843137),
+    rgba(255, 255, 255, 0.1607843137)
+  );
+  --overlay-color-active-primary: light-dark(
+    rgba(2, 101, 220, 0.3019607843),
+    rgba(120, 187, 250, 0.2509803922)
+  );
+  --overlay-color-active-danger: light-dark(
+    rgba(225, 50, 18, 0.1803921569),
+    rgba(255, 116, 95, 0.2509803922)
+  );
+  --overlay-color-active-on: light-dark(
+    rgba(20, 20, 20, 0.1607843137),
+    rgba(20, 20, 20, 0.1607843137)
+  );
+  --overlay-color-active-on-primary: light-dark(
+    rgba(20, 20, 20, 0.4),
+    rgba(20, 20, 20, 0.1607843137)
+  );
+  --overlay-color-active-on-danger: light-dark(
+    rgba(20, 20, 20, 0.4),
+    rgba(20, 20, 20, 0.1607843137)
+  );
+  --overlay-color-hover: light-dark(
+    rgba(20, 20, 20, 0.0784313725),
+    rgba(255, 255, 255, 0.0784313725)
+  );
+  --overlay-color-hover-primary: light-dark(
+    rgba(2, 101, 220, 0.1019607843),
+    rgba(120, 187, 250, 0.1019607843)
+  );
+  --overlay-color-hover-danger: light-dark(
+    rgba(225, 50, 18, 0.0588235294),
+    rgba(255, 116, 95, 0.1019607843)
+  );
+  --overlay-color-hover-on: light-dark(
+    rgba(20, 20, 20, 0.0784313725),
+    rgba(255, 255, 255, 0.0784313725)
+  );
+  --overlay-color-hover-on-primary: light-dark(
+    rgba(20, 20, 20, 0.2),
+    rgba(255, 255, 255, 0.1607843137)
+  );
+  --overlay-color-hover-on-danger: light-dark(
+    rgba(20, 20, 20, 0.2),
+    rgba(255, 255, 255, 0.1607843137)
+  );
+  --shadow-color: light-dark(
+    rgba(20, 20, 20, 0.0784313725),
+    rgba(255, 255, 255, 0.0784313725)
+  );
+  --status-color-info: light-dark(#0265dc, #78bbfa);
+  --status-color-danger: light-dark(#e13212, #ff745f);
+  --status-color-success: light-dark(#007a4d, #49cc93);
+  --status-color-warning: light-dark(#ffbe00, #ffe278);
 }
 
 @media (prefers-color-scheme: dark) {

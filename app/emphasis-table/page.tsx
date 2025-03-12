@@ -232,7 +232,8 @@ export default function EmphasisTable() {
         <Grid templateColumns="repeat(3, 1fr)" gap="14">
           <div
             style={{
-              backgroundColor: "#eeeeee",
+              backgroundColor: "var(--background-color-stronger)",
+              color: "var(--foreground-color)",
               borderRadius: "12px",
               display: "grid",
               gridTemplateColumns: "subgrid",
