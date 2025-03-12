@@ -8,46 +8,10 @@ export interface TooltipTriggerProps {
     name?: string;
     token?: string;
   };
-  showBorders?: boolean;
 }
 
-export default function TooltipTrigger({
-  color,
-  showBorders,
-}: TooltipTriggerProps) {
+export default function TooltipTrigger({ color }: TooltipTriggerProps) {
   const darkGuidance = "Works with white text or background";
-
-  let applyBorders;
-
-  if (showBorders === true) {
-    applyBorders = true;
-  }
-
-  switch (color.hexCode) {
-    case "#FFFFFF":
-      applyBorders = true;
-      break;
-    case "#737475":
-      applyBorders = true;
-      break;
-    case "#F7F7F7":
-      applyBorders = true;
-      break;
-    case "#EEEEEE":
-      applyBorders = true;
-      break;
-    case "#E0F2FF":
-      applyBorders = true;
-      break;
-    case "#FFECE9":
-      applyBorders = true;
-      break;
-    case "#FFF9E3":
-      applyBorders = true;
-      break;
-    default:
-      break;
-  }
 
   return (
     <div
@@ -57,7 +21,7 @@ export default function TooltipTrigger({
           : color.hexCode,
         boxSizing: "border-box",
         padding: "16px",
-        borderColor: applyBorders ? "#DFE0E1" : "transparent",
+        borderColor: "var(--border-color)",
         width: "75%",
         height: "140px",
         borderRadius: "12px",

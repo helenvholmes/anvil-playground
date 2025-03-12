@@ -10,10 +10,10 @@ import TooltipTrigger, {
   TooltipTriggerProps,
 } from "~/app/components/ui-components/tooltip-trigger";
 
-export default function ColorTile({ color, showBorders }: TooltipTriggerProps) {
+export default function ColorTile({ color }: TooltipTriggerProps) {
   return (
     <div>
-      <TooltipTrigger color={color} showBorders={showBorders} />
+      <TooltipTrigger color={color} />
       <Flex gap="2" direction="column">
         <Text variant="body" inline style={{ fontWeight: 700 }}>
           {color.name}
