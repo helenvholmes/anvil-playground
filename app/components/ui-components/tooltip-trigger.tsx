@@ -10,11 +10,11 @@ export interface TooltipTriggerProps {
     name?: string;
     token?: string;
   };
-  sendDataToParent: (data: string) => void;
+  onChange: (data: string) => void;
 }
 
 const TooltipTrigger = forwardRef<HTMLDivElement, TooltipTriggerProps>(
-  ({ color, sendDataToParent }, ref) => {
+  ({ color, onChange }, ref) => {
     const darkGuidance = "Works with white text or background";
     const combinedRef = useRef<HTMLDivElement>(null);
     const [colorString, setColorString] = useState("");
@@ -48,7 +48,7 @@ const TooltipTrigger = forwardRef<HTMLDivElement, TooltipTriggerProps>(
         ];
         const hexCode = rgbToHex(convertedString);
         setColorString(hexCode);
-        sendDataToParent(hexCode); // Send data to parent
+        onChange(hexCode); // Send data to parent
       }
     }, [color]); // Runs when color changes
 

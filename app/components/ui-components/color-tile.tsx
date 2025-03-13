@@ -11,9 +11,9 @@ import TooltipTrigger, {
   TooltipTriggerProps,
 } from "~/app/components/ui-components/tooltip-trigger";
 
-interface ColorTileProps extends Omit<TooltipTriggerProps, "sendDataToParent"> {
+interface ColorTileProps extends Omit<TooltipTriggerProps, "onChange"> {
   id?: string;
-  sendDataToParent?: (data: string) => void;
+  onChange?: (data: string) => void;
 }
 
 export default function ColorTile({ color, id }: ColorTileProps) {
@@ -26,7 +26,7 @@ export default function ColorTile({ color, id }: ColorTileProps) {
 
   return (
     <div id={id}>
-      <TooltipTrigger color={color} sendDataToParent={handleDataFromChild} />
+      <TooltipTrigger color={color} onChange={handleDataFromChild} />
       <Flex gap="2" direction="column">
         <Text variant="body" inline style={{ fontWeight: 700 }}>
           {color.name}
