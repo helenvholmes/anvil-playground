@@ -19,7 +19,7 @@ export default function ForegroundColorTiles() {
         name: "Default",
         token: "Foreground/Color/Default",
         hexCode: "#141414",
-        cssVariable: "--colorsTextDefault",
+        cssVariable: "--foreground-color",
         description: darkGuidance,
       },
       primary: {
@@ -234,43 +234,42 @@ export default function ForegroundColorTiles() {
     <AnvilProvider>
       <div
         style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "2rem",
-          placeItems: "center",
-          padding: "1rem",
           margin: "auto",
           minWidth: "600px",
           maxWidth: "800px",
           overflowX: "scroll",
         }}
       >
-        <Link href="/">Back</Link>
-        Foreground colors
-        <Grid templateColumns="repeat(2, 1fr)" gap="4">
-          {Object.entries(colors.foregroundColors).map(([key, color]) => (
-            <ColorTile key={key} color={color} />
-          ))}
-        </Grid>
-        Background colors
-        <Grid templateColumns="repeat(2, 1fr)" gap="4">
-          {Object.entries(colors.backgroundColors).map(([key, color]) => (
-            <ColorTile key={key} color={color} />
-          ))}
-        </Grid>
-        Border colors
-        <Grid templateColumns="repeat(2, 1fr)" gap="4">
-          {Object.entries(colors.borderColors).map(([key, color]) => (
-            <ColorTile key={key} color={color} />
-          ))}
-        </Grid>
-        Status colors
-        <Grid templateColumns="repeat(2, 1fr)" gap="4">
-          {Object.entries(colors.statusColors).map(([key, color]) => (
-            <ColorTile key={key} color={color} />
-          ))}
-        </Grid>
+        <Flex gap="4" direction="column">
+          <Link href="/">Back</Link>
+          <Text>Foreground colors</Text>
+          <Grid templateColumns="repeat(2, 1fr)" gap="8">
+            {Object.entries(colors.foregroundColors).map(([key, color]) => (
+              <ColorTile key={key} color={color} id={color.name} />
+            ))}
+          </Grid>
+          Background colors
+          <Grid templateColumns="repeat(2, 1fr)" gap="8">
+            {Object.entries(colors.backgroundColors).map(([key, color]) => (
+              <ColorTile key={key} color={color} />
+            ))}
+          </Grid>
+          Border colors
+          <Grid templateColumns="repeat(2, 1fr)" gap="8">
+            {Object.entries(colors.borderColors).map(([key, color]) => (
+              <ColorTile key={key} color={color} />
+            ))}
+          </Grid>
+          Status colors
+          <Grid templateColumns="repeat(2, 1fr)" gap="8">
+            {Object.entries(colors.statusColors).map(([key, color]) => (
+              <ColorTile key={key} color={color} />
+            ))}
+          </Grid>
+        </Flex>
       </div>
+      {/*  */}
+      {/* </div> */}
     </AnvilProvider>
   );
 }
