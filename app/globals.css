@@ -71,6 +71,7 @@
   --colorsTextOnWarning: rgb(20, 20, 20);
   --colorsTextOnCritical: rgb(255, 255, 255);
 
+  /** A2 tokens **/
   --background-color: light-dark(#ffffff, #141414);
   --background-color-strong: light-dark(#f7f7f7, #2d2e31);
   --background-color-stronger: light-dark(#eeeeee, #444445);

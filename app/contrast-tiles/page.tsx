@@ -71,13 +71,13 @@ export default function ContrastTiles() {
           label="Do this: Color combinations that pass AA guidelines"
           color="#CEF8E0"
         />
-        <Grid gap="8" templateColumns="repeat(4, 1fr)">
+        <Grid gap="8" templateColumns="repeat(auto-fit, minmax(186px, 1fr))">
           {Object.entries(passGuidelines).map(([key, color]) => (
             <Flex key={key} gap="3" direction="column">
               <div
                 style={{
                   backgroundColor: `var(${color.background})`,
-                  borderColor: "var(--colorsBorderGrey)",
+                  borderColor: "var(--border-color)",
                   borderWidth: "1px",
                   borderStyle: "solid",
                   borderRadius: "12px",
@@ -128,13 +128,13 @@ export default function ContrastTiles() {
           label="Don’t do this: Color combinations that fail AA guidelines"
           color="#FFECE9"
         />
-        <Grid gap="8" templateColumns="repeat(4, 1fr)">
+        <Grid gap="8" templateColumns="repeat(auto-fit, minmax(186px, 1fr))">
           {Object.entries(failGuidelines).map(([key, color]) => (
             <Flex key={key} gap="3" direction="column">
               <div
                 style={{
                   backgroundColor: `var(${color.background})`,
-                  borderColor: "var(--colorsBorderGrey)",
+                  borderColor: "var(--border-color)",
                   borderWidth: "1px",
                   borderStyle: "solid",
                   borderRadius: "12px",
