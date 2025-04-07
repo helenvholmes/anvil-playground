@@ -18,13 +18,13 @@ export default function HSLPlayground() {
       >
         <Link href="/">Back</Link>
         <>HSL playground tbd</>
-
+        {/* 
         <Button
           appearance="primary"
           size="medium"
           icon={EditIcon}
           onClick={console.log}
-        />
+        /> */}
       </div>
     </AnvilProvider>
   );
