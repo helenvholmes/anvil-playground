@@ -157,6 +157,10 @@
     rgba(20, 20, 20, 0.0784313725),
     rgba(255, 255, 255, 0.0784313725)
   );
+  --shadow-color-hover: light-dark(
+    rgba(20, 20, 20, 0.09),
+    rgba(255, 255, 255, 0.09)
+  );
   --status-color-info: light-dark(#0265dc, #78bbfa);
   --status-color-danger: light-dark(#e13212, #ff745f);
   --status-color-success: light-dark(#007a4d, #49cc93);

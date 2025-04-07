@@ -1,10 +1,9 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import styles from "./page.module.css";
 import { AnvilProvider } from "@servicetitan/anvil2";
 import Link from "next/link";
-
 
 export default function Home() {
   return (
@@ -15,6 +14,7 @@ export default function Home() {
           <Link href="/color-tiles">color tiles</Link>
           <Link href="/semantic-color-tiles">semantic color tiles</Link>
           <Link href="/contrast-tiles">color contrast tiles</Link>
+          <Link href="/hsl-playground">hsl playground</Link>
         </main>
       </div>
     </AnvilProvider>

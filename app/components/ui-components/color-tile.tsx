@@ -13,7 +13,6 @@ import TooltipTrigger, {
 
 interface ColorTileProps extends Omit<TooltipTriggerProps, "onChange"> {
   id?: string;
-  onChange?: (data: string) => void;
 }
 
 export default function ColorTile({ color, id }: ColorTileProps) {
