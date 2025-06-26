@@ -10,6 +10,7 @@ export default function Home() {
     <AnvilProvider>
       <div className={styles.page}>
         <main className={styles.main}>
+          <Link href="/assist">Assist</Link>
           <Link href="/emphasis-table">emphasis table</Link>
           <Link href="/color-tiles">color tiles</Link>
           <Link href="/semantic-color-tiles">semantic color tiles</Link>
