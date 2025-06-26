@@ -194,8 +194,44 @@ body {
   margin: 0;
 }
 
+.h-6 {
+  height: 24px;
+}
+
+.w-6 {
+  width: 24px;
+}
+
+.fill-default-icon-inverse {
+  fill: white;
+}
+
+.fill-default-icon-regular {
+  fill: black;
+}
+
+.flex {
+  display: flex;
+}
+
+.gap-4 {
+  gap: 16px;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+
+  .fill-default-icon-inverse {
+    fill: black;
+  }
+
+  .fill-default-icon-regular {
+    fill: white;
   }
 }

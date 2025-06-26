@@ -16,6 +16,7 @@ export default function Home() {
           <Link href="/contrast-tiles">color contrast tiles</Link>
           <Link href="/hsl-playground">hsl playground</Link>
           <Link href="/component-playground">component playground</Link>
+          <Link href="/peek-examples">peek examples</Link>
         </main>
       </div>
     </AnvilProvider>
